@@ -35,7 +35,7 @@ img {
   width : 70%;
   /* animation: spin 88s infinite; */
   animation-name: spin;
-  animation-duration: 55s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   z-index: 1;
