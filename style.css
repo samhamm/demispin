@@ -10,6 +10,10 @@ p {
   padding: 20px;
 }
 
+h1, div {
+  z-index: 3;
+}
+
 .notransform {
   transform: none !important;
 }
@@ -23,17 +27,23 @@ p {
 
 body {
   text-align: center;
+  font-family: Helvetica, sans-serif;
 }
 
 img {
   border-radius: 300px;
   width : 70%;
-  animation: spin 88s infinite;
+  /* animation: spin 88s infinite; */
+  animation-name: spin;
+  animation-duration: 55s;
+  animation-iteration-count: infinite;
   animation-timing-function: linear;
+  z-index: 1;
 }
 
 .slidecontainer {
   width: 100%; /* Width of the outside container */
+  z-index: 3;
 }
 
 /* The slider itself */
@@ -43,15 +53,16 @@ img {
   width: 100%; /* Full-width */
   height: 25px; /* Specified height */
   background: #d3d3d3; /* Grey background */
-  outline: none; /* Remove outline */
   opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
   -webkit-transition: .2s; /* 0.2 seconds transition on hover */
   transition: opacity .2s;
+  z-index: 3;
 }
 
 /* Mouse-over effects */
 .slider:hover {
   opacity: 1; /* Fully shown on mouse-over */
+  z-index: 3;
 }
 
 /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
@@ -69,4 +80,5 @@ img {
   height: 25px; /* Slider handle height */
   background: #4CAF50; /* Green background */
   cursor: pointer; /* Cursor on hover */
+  z-index: 3;
 }
